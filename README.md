@@ -46,7 +46,7 @@ You have some options to run your app
 
 Copy `docker-compose.armxx.yml` to your Torizon system:
 ```bash
-host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yaml
+host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yml
 ```
 
 In Torizon, you just need to run:
