@@ -42,24 +42,6 @@ host$ docker push totalcross/home-appliance-demo:<tag>
 
 You have some options to run your app
 
-### Docker compose
-
-Copy `docker-compose.armxx.yml` to your Torizon system:
-```bash
-host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yml
-```
-
-In Torizon, you just need to run:
-```bash
-torizon$ docker-compose up -d
-```
-
-To finish the application, run
-```bash
-torizon$ docker-compose down
-```
-> If you have troubles with *docker-compose* please read **Command line** option
-
 ### Command line
 
 Depending on your device you must choose your option (ex. "Apalis iMX8QM is 64-bits, that's why I must choose the second option")
@@ -90,5 +72,20 @@ Depending on your device you must choose your option (ex. "Apalis iMX8QM is 64-b
         -v /dev/dri:/dev/dri --device-cgroup-rule='c 226:* rmw' \
         totalcross/home-appliance-demo:latest
     ```
+### Docker compose
 
+Copy `docker-compose.armxx.yml` to your Torizon system:
+```bash
+host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yml
+```
 
+In Torizon, you just need to run:
+```bash
+torizon$ docker-compose up -d
+```
+
+To finish the application, run
+```bash
+torizon$ docker-compose down
+```
+> If you have troubles with *docker-compose* please read **Command line** option
