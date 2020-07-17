@@ -25,6 +25,11 @@ Push your changes (latest):
 host$ docker push totalcross/home-appliance-demo:<tag>
 ```
 
+In Torizon:
+
+(Optional) To force the updating of your app on the device you should pull the changes on Docker
+host$ docker pull totalcross/home-appliance-demo:<tag>
+
 Copy `docker-compose.armxx.yml` to your Torizon system:
 ```bash
 host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yaml
