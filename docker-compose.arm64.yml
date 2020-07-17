@@ -7,7 +7,7 @@ services:
       - ACCEPT_FSL_EULA=1
       - XDG_RUNTIME_DIR=/run/display
     container_name: weston
-    image: torizon/arm64v8-debian-weston-vivante:latest
+    image: torizon/arm64v8-debian-weston-vivante:buster
     volumes:
       - type: bind
         source: /tmp
